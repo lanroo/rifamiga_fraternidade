@@ -12,15 +12,17 @@ const LoginPage: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
-        <input type="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" placeholder="Senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
+        <div className="input-container">
+          <input type="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} />
+        </div>
+        <div className="input-container">
+          <input type="password" placeholder="Senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
+        </div>
         <button type="submit" className="button-login">Entrar</button>
-
       </form>
-     
     </div>
   );
 };

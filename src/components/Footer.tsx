@@ -1,10 +1,11 @@
 import React from 'react';
+import '../pages/styles/Footer.css';
 
 const Footer: React.FC = () => {
   return (
-    <footer style={{ marginTop: '30px', padding: '20px', textAlign: 'center', backgroundColor: '#f0f0f0' }}>
-      <p>&copy; {new Date().getFullYear()} Rifaqui</p>
-      <p>Todos os direitos reservados. - Create By.</p>
+    <footer className="footer-container">
+      <p className="footer-text">&copy; {new Date().getFullYear()} Rifaqui</p>
+      <p className="footer-text">Todos os direitos reservados. - Create By Ylanna.</p>
     </footer>
   );
 };
