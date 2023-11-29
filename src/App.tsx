@@ -6,8 +6,15 @@ import HomePage from './pages/HomePage';
 import RafflePage from './pages/RafflePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
-
 import LoginPage from './pages/LoginPage'; 
+
+// Styles  
+import './pages/styles/HomePage.css';
+import './pages/styles/RafflePage.css';
+import './pages/styles/AboutPage.css';
+import './pages/styles/ContactPage.css';
+import './pages/styles/LoginPage.css';
+
 import './App.css';
 
 function App() {
