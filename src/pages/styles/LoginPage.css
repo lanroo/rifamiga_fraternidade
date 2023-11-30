@@ -1,9 +1,13 @@
 /* LoginPage.css */
+
+html{
+    background:#272727;
+  }
+
 .login-container {
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #f4f4f4;
+    padding: 50px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
@@ -24,19 +28,25 @@
     border-radius: 5px;
   }
   
-  .button-login {
-    width: 100%;
-    padding: 10px 20px;
-    background-color: yellow;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
+ .button-login {
+  width: 33%;
+  padding: 10px 20px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
   
   .button-login:hover {
     background-color: #000000;
     color: white;
   }
+
+ 
   
