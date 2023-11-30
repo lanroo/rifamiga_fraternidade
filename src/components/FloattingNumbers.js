@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -30,6 +31,7 @@ const FloatingNumbers = () => {
           }}
           exit={{ opacity: 0 }}
           transition={{
+
             duration: 5,
             delay: item.delay,
             repeat: Infinity,

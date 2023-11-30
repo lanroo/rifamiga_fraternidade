@@ -4,6 +4,11 @@ html{
     background:#272727;
   }
 
+  .error {
+    color: red;
+  }
+  
+
 .login-container {
     max-width: 400px;
     margin: 0 auto;
@@ -42,11 +47,58 @@ html{
   margin-right: auto;
 }
 
-  
   .button-login:hover {
     background-color: #000000;
     color: white;
   }
 
+  .login-options {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-options a {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000; 
+    text-decoration: none;
+  }
+  
+  .login-options a:hover {
+    text-decoration: underline;
+  }
+
+  .login-options {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-options a {
+    display: block;
+    color: #007bff; 
+    text-decoration: none;
+    margin-bottom: 10px; 
+  }
+  
+  .login-options a:hover {
+    text-decoration: underline;
+  }
+  
+  .signup-prompt {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 5px; 
+  }
+  
+  .signup-prompt p {
+    margin: 2.4; 
+  }
+
+  a {
+    margin-top: 13px;
+}
+  
+  
  
   
