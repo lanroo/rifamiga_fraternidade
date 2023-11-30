@@ -45,7 +45,8 @@ const LoginPage: React.FC = () => {
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.5 }} 
       >
-        <h1>Login</h1>
+        <h1>Área Privativa</h1>
+        <h2>Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="input-container">
             <input 
@@ -74,10 +75,10 @@ const LoginPage: React.FC = () => {
         </motion.button>
         <div className="login-options">
             <a href="/esqueceu-senha">Esqueceu a senha?</a>
-            <div className="signup-prompt">
+            {/* <div className="signup-prompt">
                 <p>Não tem conta?</p>
             <a href="/cadastro">Fazer cadastro agora</a>
-            </div>
+            </div> */}
         </div>
         </form>
       </motion.div>

@@ -8,19 +8,25 @@ html{
     color: red;
   }
   
-
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
 .login-container {
     max-width: 400px;
     margin: 0 auto;
     padding: 50px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px #00000033;
   }
   
+
   .login-container h1 {
     text-align: center;
-    margin-bottom: 20px;
-  }
+    margin-bottom: 68px;
+}
   
   .input-container {
     margin-bottom: 20px;
