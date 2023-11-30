@@ -1,8 +1,8 @@
-
+ 
 .footer-container {
   padding: 20px;
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: #a7a39c;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -10,7 +10,7 @@
 
 .footer-text {
   font-size: 14px;
-  color: #777;
+  color: #000000;
 }
 
 .footer-text a {
