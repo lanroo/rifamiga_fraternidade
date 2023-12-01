@@ -1,22 +1,31 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 
 const RafflePage: React.FC = () => {
-  const rifas = [
-    { id: 1, nome: 'Rifa 1', descricao: '' },
-    { id: 2, nome: 'Rifa 2', descricao: '' },
-    // Adicione mais rifas aqui
-  ];
+  const [selectedNumbers, setSelectedNumbers] = useState(new Set());
+
+  const toggleNumber = (number: unknown) => {
+    setSelectedNumbers((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(number)) {
+        newSet.delete(number);
+      } else {
+        newSet.add(number);
+      }
+      return newSet;
+    });
+  };
 
   return (
     <div>
-      <h1>Rifas Disponíveis//exemplo</h1>
-      <div>
-        {rifas.map((rifa) => (
-          <div key={rifa.id}>
-            <h2>{rifa.nome}</h2>
-            <p>{rifa.descricao}</p>
-        
+      <h1>Escolha seus números da Sorte.</h1>
+      <div className="bingo-board">
+        {Array.from({ length: 75 }, (_, i) => i + 1).map((number) => (
+          <div
+            key={number}
+            className={`bingo-number ${selectedNumbers.has(number) ? 'selected' : ''}`}
+            onClick={() => toggleNumber(number)}
+          >
+            {number < 10 ? `0${number}` : number}
           </div>
         ))}
       </div>

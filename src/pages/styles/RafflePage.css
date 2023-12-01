@@ -1,0 +1,62 @@
+.bingo-wrapper {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    padding: 20px;
+}
+
+.bingo-board {
+    display: grid;
+    justify-content: center; 
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); 
+    gap: 13px;
+    padding: 4rem;
+    max-width: calc(100% - 40px); 
+}
+
+.bingo-number {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+    width: 30px; 
+    height: 30px; 
+    font-size: 12px; 
+}
+
+.bingo-number.selected {
+    background-color: #4caf50; 
+    color: white;
+}
+
+
+    @media (max-width: 600px) {
+        .bingo-board {
+            grid-template-columns: repeat(auto-fill, minmax(25px, 1fr)); 
+            max-width: calc(100% - 30px);
+        }
+
+        .bingo-number {
+            width: 25px;
+            height: 25px;
+            font-size: 10px; 
+    }
+
+    @media (max-width: 400px) {
+        .bingo-board {
+            grid-template-columns: repeat(auto-fill, minmax(20px, 1fr)); 
+            max-width: calc(100% - 20px); 
+        }
+
+        .bingo-number {
+            width: 20px; 
+            height: 20px;
+            font-size: 8px; 
+        }
+    }
+}
