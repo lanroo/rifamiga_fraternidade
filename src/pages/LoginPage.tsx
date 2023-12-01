@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './styles/LoginPage.css';
 import FloatingNumbers from '../components/FloattingNumbers'; 
      
@@ -32,7 +33,7 @@ const LoginPage: React.FC = () => {
 
     if (!errors.email && !errors.senha) {
       console.log(`Login com email: ${email} e senha: ${senha}`);
-      // Proceder com o login
+      //  login
     }
   };
 
@@ -74,12 +75,12 @@ const LoginPage: React.FC = () => {
             Entrar
         </motion.button>
         <div className="login-options">
-            <a href="/esqueceu-senha">Esqueceu a senha?</a>
-            {/* <div className="signup-prompt">
-                <p>Não tem conta?</p>
-            <a href="/cadastro">Fazer cadastro agora</a>
-            </div> */}
-        </div>
+      <Link to="/esqueceu-senha">Esqueceu a senha?</Link>
+      <div className="signup-prompt">
+        <p>Não tem conta?</p>
+        <Link to="/cadastro">Fazer cadastro agora</Link>
+      </div>
+       </div>
         </form>
       </motion.div>
     </>

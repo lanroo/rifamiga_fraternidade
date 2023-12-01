@@ -1,6 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Main from './components/Main';
+import LoginPage from './pages/LoginPage';
+import CadastroPage from './pages/CadastroPage';
 
 // Styles  
 import './pages/styles/HomePage.css';
@@ -14,6 +16,10 @@ function App() {
   return (
     <Router>
       <Main />
+      <Routes>
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/cadastro" element={<CadastroPage />} />
+      </Routes>
     </Router>
   );
 }
