@@ -1,4 +1,3 @@
-// HomePage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import image1 from '../components/images/banner1.png';
@@ -8,7 +7,7 @@ import FloatingNumbers from '../components/FloattingNumbers';
 const HomePage = () => {
   return (
     <>
-      <FloatingNumbers /> {/* Adicione o componente aqui */}
+      <FloatingNumbers /> 
       <div className="image-container" style={{ position: 'relative' }}>
         <img src={image1} alt="Slide 1" style={{ width: '100%' }} />
         <div className="content-container" style={{

@@ -32,3 +32,8 @@
     font-size: 16px; 
   }
 }
+
+.footer-text a {
+  color: #3c3d3d;
+  text-decoration: none;
+}

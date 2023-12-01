@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './styles/LoginPage.css';
 import FloatingNumbers from '../components/FloattingNumbers'; 
-
+     
 const LoginPage: React.FC = () => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');

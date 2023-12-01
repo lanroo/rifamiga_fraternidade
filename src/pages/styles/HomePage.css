@@ -16,22 +16,28 @@
   }
   
   .content-container h2 {
-    margin: 0.5rem 0; 
-    font-size: 2rem;
-    color:black;
-  }
-  
-  .content-container p {
     margin: 0.5rem 0;
-    font-size: 1.5rem; 
-    color:black;
-  }
+    font-size: 3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    text-shadow: -0.5px -0.5px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+
+.content-container p {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    
+}
+
   
   .button-bingo {
     margin-top: 1rem; 
     padding: 0.5rem 1rem; 
     font-size: 1rem; 
   }
+  
+
   
 
   @media (max-width: 768px) {
@@ -72,4 +78,12 @@
       width: 14rem;
     }
   }
+  @media only screen and (max-width: 600px) {
+    /* Estilos para FloatingNumbers em telas pequenas (smartphones) */
+    .floating-number-class {
+        font-size: menor;
+        /* Outros estilos responsivos */
+    }
+}
+
   
