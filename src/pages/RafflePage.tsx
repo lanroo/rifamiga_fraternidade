@@ -17,7 +17,7 @@ const RafflePage: React.FC = () => {
 
   return (
     <div>
-      <h1>Escolha seus números da Sorte.</h1>
+      <h1 id='numbers-text'>Escolha seus números da Sorte.</h1>
       <div className="bingo-board">
         {Array.from({ length: 75 }, (_, i) => i + 1).map((number) => (
           <div
