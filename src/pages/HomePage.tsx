@@ -20,9 +20,10 @@ const HomePage = () => {
         }}>
           <h2>Quer ganhar o prêmio do nosso bingo?</h2>
           <p>Escolha os seus números da sorte</p>
-          <Link to="/RafflePage.tsx">
-            <button className="button-bingo">Participar</button>
+          <Link to="/raffles">
+             <button className="button-bingo">Participar</button>
           </Link>
+
         </div>
       </div>
     </>

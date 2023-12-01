@@ -22,7 +22,6 @@
   text-decoration: underline;
 }
 
-/* Media Queries para telas menores */
 @media (max-width: 768px) {
   .footer-container {
     padding: 10px; 
