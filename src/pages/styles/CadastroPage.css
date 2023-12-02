@@ -1,15 +1,33 @@
-h1 {
-    margin-left: 36rem!important;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.cadastro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
     color: white;
-    
-}
+  }
 
-form {
-    margin: 10em;
+  input[type="text"] {
+    margin-left: 0rem;
 }
-
-button {
+  
+  .cadastro-container h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  
+  .cadastro-container form {
+    width: 100%; 
+    max-width: 500px; 
+    margin: 2rem auto; 
+  }
+  
+  .cadastro-container .input-container {
+    margin-bottom: 1rem;
+    width: 100%; 
+  }
+  
+  .cadastro-container button {
     background-color: yellow;
     color: black;
     font-weight: bold;
@@ -17,103 +35,47 @@ button {
     padding: 12px 22px;
     font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s;
-    margin-left: 26rem;
-}
-
-
-@media (max-width: 768px) {
-    h1 {
-        margin-left: 8rem!important;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: white;
-        
-    }
-    
-    form {
-        margin: 6em;
-    }
-
-    .footer-container {
-        padding: 20px;
-        text-align: center;
-        background-color: #a7a39c;
-        position: absolute;
-        bottom: 0;
-        width: 90%;
-    }
-    .footer-text {
-        font-size: 12px;
-    }
-    
+    transition: all 0.3s ease;
+    width: 100%; 
+    margin: 1rem 0;
   }
-  @media only screen and (max-width: 600px) {
-    h1 {
-        margin-left: 8rem!important;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: white;
-        
+  
+  .cadastro-container input[type="text"],
+  .cadastro-container input[type="email"],
+  .cadastro-container input[type="password"] {
+    width: 100%; 
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+
+  @media (max-width: 768px) {
+    .cadastro-container {
+      padding: 1rem;
     }
-    
-    form {
-        margin: 5em;
+  
+    .cadastro-container h1 {
+      margin: 1rem;
+      font-size: 1.5rem; 
     }
-    button {
-        background-color: yellow;
-        color: black;
-        font-weight: bold;
-        border-radius: 20px;
-        padding: 12px 16px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: all 0.3s;
-        margin-left: 3.3rem;
+  
+    .cadastro-container form {
+      margin: 1rem;
     }
-    .footer-container {
-        padding: 20px;
-        text-align: center;
-        background-color: #a7a39c;
-        position: absolute;
-        bottom: 0;
-        width: 90%;
-    }
-    .footer-text {
-        font-size: 12px;
-    }
-    button {
-        background-color: yellow;
-        color: black;
-        font-weight: bold;
-        border-radius: 20px;
-        padding: 12px 16px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: all 0.3s;
-        margin-left: 3.3rem;
+  
+    .cadastro-container .input-container,
+    .cadastro-container button {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
-    /* Media query para telas com largura acima de 1500px
-@media (m-width: 1300px) {
-    h1 {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
+  
+  @media (max-width: 480px) {
+    .cadastro-container h1 {
+      font-size: 1.2rem; 
     }
-
-    form {
-        margin: auto;
-        max-width: 50%;
-    }
-
-    button {
-        margin-left: 10rem;
-        margin-right: auto;
-        display: block;
-    }
-
-    
-} */
-
-
-
-
+  }
+  

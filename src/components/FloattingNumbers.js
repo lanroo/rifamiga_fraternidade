@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -5,7 +6,7 @@ const FloatingNumbers = () => {
   const generateRandomNumber = () => {
     return {
       id: Math.random(),
-      number: Math.floor(Math.random() * 10),
+      number: Math.floor(Math.random() * 20),
       initialX: Math.random() * window.innerWidth,
       initialY: Math.random() * window.innerHeight,
       animateX: Math.random() * window.innerWidth,
@@ -14,7 +15,7 @@ const FloatingNumbers = () => {
     };
   };
 
-  const numbers = Array.from({ length: 30 }, generateRandomNumber);
+  const numbers = Array.from({ length: 10}, generateRandomNumber);
 
   return (
     <AnimatePresence>
@@ -25,11 +26,12 @@ const FloatingNumbers = () => {
           animate={{
             x: item.animateX,
             y: item.animateY,
-            opacity: [0, 1, 1, 0],
-            scale: [0, 1, 1, 0]
+            opacity: [0, 0.5, 0.5, 0],
+            scale: [1, 1, 1, 0]
           }}
           exit={{ opacity: 0 }}
           transition={{
+
             duration: 5,
             delay: item.delay,
             repeat: Infinity,
@@ -38,8 +40,8 @@ const FloatingNumbers = () => {
           }}
           style={{
             position: 'fixed',
-            fontSize: '40px',
-            color: '#37230e', // Alterado de branco com transparência para preto
+            fontSize: '20px',
+            color: 'rgba(255, 255, 255, 0.7)',
             userSelect: 'none',
             pointerEvents: 'none',
           }}

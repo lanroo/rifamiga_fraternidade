@@ -2,17 +2,14 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './styles/CadastroPage.css';
-import LoginPage from './LoginPage';
-
-
-
+// import LoginPage from './LoginPage';
 import FloatingNumbers from '../components/FloattingNumbers';
 
 function App() {
     return (
       <Router>
         <Routes>
-          <Route path="/login" element={<LoginPage />} />
+          {/* <Route path="/login" element={<LoginPage />} /> */}
           <Route path="/cadastro" element={<CadastroPage />} />
      
         </Routes>
