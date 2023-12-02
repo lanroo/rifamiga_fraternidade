@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Main from './components/Main';
 import LoginPage from './pages/LoginPage';
 import CadastroPage from './pages/CadastroPage';
+import ReservarNumerosPage from './pages/ReservarNumerosPage'; 
+import ComprarNumerosPage from './pages/ComprarNumerosPage'; 
 
 // Styles  
 import './pages/styles/HomePage.css';
@@ -19,6 +21,9 @@ function App() {
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/cadastro" element={<CadastroPage />} />
+        <Route path="/reservar-numeros" element={<ReservarNumerosPage />} />
+        <Route path="/comprar-numeros" element={<ComprarNumerosPage />} />
+   
       </Routes>
     </Router>
   );
