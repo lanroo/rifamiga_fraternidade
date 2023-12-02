@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import './styles/RafflePage.css';
 
 const RafflePage: React.FC = () => {
-  const [selectedNumbers, setSelectedNumbers] = useState(new Set());
+  const [selectedNumbers, setSelectedNumbers] = useState<Set<number>>(new Set());
 
-  const toggleNumber = (number: unknown) => {
+  const toggleNumber = (number: number) => {
     setSelectedNumbers((prev) => {
       const newSet = new Set(prev);
       if (newSet.has(number)) {
@@ -29,6 +31,13 @@ const RafflePage: React.FC = () => {
           </div>
         ))}
       </div>
+      <motion.button
+        type="submit"
+        className="unique-button" // Use a classe única aqui
+        whileHover={{ scale: 1.05 }}
+      >
+        Escolher Números
+      </motion.button>
     </div>
   );
 };
