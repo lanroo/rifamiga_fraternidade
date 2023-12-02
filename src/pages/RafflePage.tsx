@@ -79,24 +79,28 @@ const RafflePage: React.FC = () => {
             <h3>Digite seu nome</h3>
             <input type="text" value={userName} onChange={handleNameChange} />
             <div className="modal-actions">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                onClick={() => {
-                  handleCloseModal();
-                  navigate('/reservar-numeros');
-                }}
-              >
-                Reservar Números
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                onClick={() => {
-                  handleCloseModal();
-                  navigate('/comprar-numeros');
-                }}
-              >
-                Comprar Números
-              </motion.button>
+            <motion.button
+  className="button-reservar" // Classe separada para o botão "Reservar Números"
+  whileHover={{ scale: 1.05 }}
+  onClick={() => {
+    handleCloseModal();
+    navigate('/reservar-numeros');
+  }}
+>
+  Reservar Números
+</motion.button>
+
+<motion.button
+  className="button-comprar" // Classe separada para o botão "Comprar Números"
+  whileHover={{ scale: 1.05 }}
+  onClick={() => {
+    handleCloseModal();
+    navigate('/comprar-numeros');
+  }}
+>
+  Comprar Números
+</motion.button>
+
             </div>
           </div>
         </div>

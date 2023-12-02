@@ -100,64 +100,47 @@
     }
     /* modal pop up */
     .modal-overlay {
-        position: fixed; /* Posicionamento fixo na tela */
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
         display: flex;
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center; /* Centraliza verticalmente */
-        z-index: 100; /* Garante que o overlay esteja acima de outros elementos */
-      }
-      
-      .modal-content {
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        position: relative;
-        z-index: 1001;
-        width: 80%; /* Ajuste para a largura desejada, aqui é 80% da viewport */
-        height: 80vh; /* Ajuste para a altura desejada, aqui é 80% da altura da viewport */
-        max-width: 1000px; /* Um valor máximo para garantir que não fique grande demais em monitores maiores */
-        max-height: 600px; /* Um valor máximo para a altura */
-      
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Centraliza o conteúdo verticalmente dentro da modal */
-        align-items: center; /* Centraliza o conteúdo horizontalmente dentro da modal */
-    }
-    
-    
-      
-      .modal-actions {
-        display: flex;
-        justify-content: center;
-        gap: 10;
-        margin-top: 20px;
-      }
-      .modal-overlay {
-        position: fixed;
+        position: fixed; 
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.6);
         display: flex;
-        justify-content: center;
+        justify-content: center; 
         align-items: center;
-        z-index: 1000;
+        z-index: 100; 
       }
       
       .modal-content {
+        position: relative;
         background: white;
         padding: 20px;
         border-radius: 10px;
         position: relative;
         z-index: 1001;
+        width: 80%; 
+        height: 80vh;
+        max-width: 1000px; 
+        max-height: 600px; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+    }
+    button.button-reservar {
+        margin-left: 17rem;
+    }
+    button.button-comprar {
+        margin-left: 6rem;
+    }
+          
+      .buttons-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Espaço entre os botões */
+        margin-top: 20px; /* Espaço acima dos botões, ajuste conforme necessário */
       }
-      
       .close-button {
         position: absolute;
         top: 10px;
@@ -169,13 +152,7 @@
         cursor: pointer;
       }
       
-      .modal-actions {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 20px;
-      }
-      
+
       /* botão voltar modal */
       .modal-actions button {
         padding: 10px 15px;
