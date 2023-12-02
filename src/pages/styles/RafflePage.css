@@ -22,7 +22,12 @@
         margin: 10em;
     }
 
-
+    .selected-numbers-list p {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 1.5rem; 
+      }
+      
     .raffle-container {
         display: flex;
         flex-direction: column;
@@ -173,6 +178,12 @@
         margin-left: 5rem;
         font-size: 2rem;
     }
+
+    p.error-message {
+        margin-left: 22rem;
+        color: red;
+        font-size: 1.5rem;
+    }
       /* Desabilita o scroll do body quando a modal está aberta */
       body.modal-open {
         overflow: hidden;
@@ -245,9 +256,15 @@
                 margin-left: 2rem;
                 font-size: 2rem;
             }
+           
             
-
+            p.error-message {
+                margin-left: 3rem;
+                color: red;
+                font-size: 16px;
+            }
         @media (max-width: 400px) {
+            
             .bingo-board {
                 grid-template-columns: repeat(auto-fill, minmax(20px, 1fr)); 
                 gap: 10px;
@@ -256,6 +273,7 @@
                 margin-top: -2rem;
                 margin-bottom: 1em;
             }
+            
 
             .bingo-number {
                 width: 20px; 
@@ -269,3 +287,5 @@
             }
         }
     }
+
+    
