@@ -125,4 +125,9 @@
           margin-bottom: 1.5rem;
       }
 
+  
+    .nav-links.close, .login-button {
+    display: block;
+}
+
     }

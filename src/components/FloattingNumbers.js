@@ -15,7 +15,7 @@ const FloatingNumbers = () => {
     };
   };
 
-  const numbers = Array.from({ length: 10}, generateRandomNumber);
+  const numbers = Array.from({ length: 20}, generateRandomNumber);
 
   return (
     <AnimatePresence>

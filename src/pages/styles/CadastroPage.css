@@ -1,4 +1,6 @@
-
+html {
+    margin-right: -2rem;
+}
 .cadastro-container {
     display: flex;
     flex-direction: column;
@@ -47,16 +49,19 @@
     padding: 0.5rem;
     font-size: 1rem;
     margin-bottom: 1rem;
-    border-radius: 5px;
+    border-radius: 9px;
     border: 1px solid #ccc;
   }
   
 
   @media (max-width: 768px) {
     .cadastro-container {
-      padding: 1rem;
+        margin-right: -0.8rem;
     }
-  
+    .login-container {
+        margin-right: auto;
+    }
+   
     .cadastro-container h1 {
       margin: 1rem;
       font-size: 1.5rem; 
@@ -70,8 +75,10 @@
     .cadastro-container button {
       margin-left: auto;
       margin-right: auto;
+
     }
   }
+  
   
   @media (max-width: 480px) {
     .cadastro-container h1 {

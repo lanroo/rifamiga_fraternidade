@@ -1,16 +1,23 @@
    
-
-    h3 {
+        h3 {
         margin-left: 25rem;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: black;
         font-size: 2rem;
     }
-   
-
+    
+    
     /* form {
         margin: 10em;
     } */
+    .footer-container {
+        position: absolute;
+        width: 100%;
+        padding-top: 4rem;
+    }
+    button {
+        margin-right: 3rem;
+    }
 
     .selected-numbers-list p {
         text-align: center;
@@ -35,17 +42,20 @@
         padding: 12px 22px;       
         font-size: 16px;          
         cursor: pointer;         
-        transition: all 0.3s;     
-        display: block;          
+        transition: all 0.3s;            
         margin: 1em auto;         
         text-align: center; 
-
         margin: 1em auto 2em;
+        margin-left: 32rem;
     }
 
     .unique-button:hover {
         scale: 1.05; 
 
+    }
+    button:hover {
+        background-color: #ffffffd3;
+        color: black;
     }
 
     .bingo-wrapper {
@@ -89,10 +99,7 @@
         background-color: #4caf50; 
         color: white;
     }
-    .footer-container {
-        position: absolute;
-        width: 100%;
-    }
+    
     /* modal pop up */
     .modal-overlay {
         display: flex;
@@ -169,6 +176,9 @@
         font-size: 2rem;
     }
 
+    input[type="text"] {
+        margin-left: 7rem;
+    }
     p.error-message {
         margin-left: 22rem;
         color: red;
@@ -181,6 +191,10 @@
       
         
         @media (max-width: 600px) {
+
+            nav, header {
+                display:none;
+            }
             h3 {
                 margin-left: 6rem;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -189,6 +203,21 @@
                 text-wrap: nowrap;
                 margin-bottom: 2rem;
             }
+            .unique-button {
+                background-color: yellow;
+                color: black;
+                font-weight: bold;
+                border-radius: 20px;
+                padding: 12px 22px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: all 0.3s;
+                margin: 1em auto;
+                text-align: center;
+                margin: 1em auto 2em;
+                margin-left: 8rem;
+            }
+            
             
             .bingo-board {
                 grid-template-columns: repeat(auto-fill, minmax(25px, 1fr));
