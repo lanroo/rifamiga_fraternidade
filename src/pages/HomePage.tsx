@@ -21,7 +21,7 @@ const HomePage = () => {
           <h2>Quer ganhar o prêmio do nosso bingo?</h2>
           <p>Escolha os seus números da sorte</p>
           <Link to="/raffles">
-             <button className="button-bingo">Participar</button>
+             <button className="button-bingo">Escolher Números </button>
           </Link>
 
         </div>

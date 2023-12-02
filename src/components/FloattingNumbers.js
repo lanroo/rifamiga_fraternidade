@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -31,7 +30,6 @@ const FloatingNumbers = () => {
           }}
           exit={{ opacity: 0 }}
           transition={{
-
             duration: 5,
             delay: item.delay,
             repeat: Infinity,
@@ -40,8 +38,8 @@ const FloatingNumbers = () => {
           }}
           style={{
             position: 'fixed',
-            fontSize: '20px',
-            color: 'rgba(255, 255, 255, 0.7)',
+            fontSize: '40px',
+            color: '#37230e', // Alterado de branco com transparência para preto
             userSelect: 'none',
             pointerEvents: 'none',
           }}
