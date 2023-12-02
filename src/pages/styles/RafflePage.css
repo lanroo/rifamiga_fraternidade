@@ -138,8 +138,8 @@
       .buttons-container {
         display: flex;
         justify-content: center;
-        gap: 10px; /* Espaço entre os botões */
-        margin-top: 20px; /* Espaço acima dos botões, ajuste conforme necessário */
+        gap: 10px;
+        margin-top: 20px; 
       }
       .close-button {
         position: absolute;
@@ -164,29 +164,29 @@
       
       
       input[type="text"] {
-        width: 100%;
-        padding: 10px;
-        margin-top: 10px;
+        width: 76%;
+        padding: 14px;
+        margin-top: 9px;
         margin-bottom: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
-      }
-      
+        margin-left: 5rem;
+        font-size: 2rem;
+    }
       /* Desabilita o scroll do body quando a modal está aberta */
       body.modal-open {
         overflow: hidden;
       }
       
-           
-
+        
         @media (max-width: 600px) {
             h3 {
                 margin-left: 6rem!important;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 color: white;
-                font-size: 1rem;
+                font-size: 1.3rem;
                 text-wrap: nowrap;
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
             }
             
             .bingo-board {
@@ -199,8 +199,23 @@
                 padding-bottom: 50px;
                 margin-right: 1rem;
             }
+            button.button-reservar {
+                margin-left: 4rem;
+                width: 6rem;
+                border: rgb(255, 255, 255) 0.8px solid;
+                border-radius: 13px;
+                background-color:black;
+                color:white;
+            }
+            button.button-comprar {
+                margin-left: 2rem;
+                width: 6rem;
+                border: rgb(255, 255, 255) 0.8px solid;
+                border-radius: 13px;
+                background-color:black;
+                color:white;
+            }
         
-
             .bingo-number {
                 width: 30px;
                 height: 30px;
@@ -217,6 +232,18 @@
                 clear: both;
                 background-color: rgb(240 240 240); 
                 width: 100%;
+            }
+
+           
+            input[type="text"] {
+                width: 71%;
+                padding: 16px;
+                margin-top: 9px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-left: 2rem;
+                font-size: 2rem;
             }
             
 
