@@ -54,8 +54,8 @@
 
     }
     button:hover {
-        background-color: #ffffffd3;
-        color: black;
+        background-color: #000000d3;
+        color: rgb(255, 254, 254);
     }
 
     .bingo-wrapper {
