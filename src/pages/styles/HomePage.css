@@ -1,9 +1,82 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Para evitar barras de rolagem indesejadas */
+}
+
+.content-container {
+  margin-top: 15%;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #333; /* Ajuste a cor de fundo conforme necessário */
+  padding: 1rem;
+  color: white;
+}
+
+.floating-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5; /* Abaixo da navbar, acima do conteúdo principal */
+  pointer-events: none; /* Para garantir que não interfira na interação do usuário com o conteúdo principal */
+}
 
 .image-container {
-    position: absolute;
-    width: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 1; /* Abaixo dos números flutuantes */
+}
+
+.content-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  max-width: 90%; 
+  padding: 1rem;
+  z-index: 2; 
+}
+
+.content-container h2 {
+  margin: 0.5rem 0;
+  font-size: 3rem;
+  font-family: system-ui;
+}
+
+.content-container p {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: rgb(255 235 133);
+}
+
+.button-bingo {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    height: 100vh;
   }
-  
+
+  .image-container img {
+    height: 100%;
+    object-fit: cover;
+  }
+
   .content-container {
     position: absolute;
     top: 50%;
@@ -11,81 +84,30 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    max-width: 90%; 
-    padding: 1rem; 
+    width: 100%;
+    max-width: none;
   }
-  
+
   .content-container h2 {
-    margin: 0.5rem 0;
-    font-size: 3rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: rgb(0, 0, 0);
-    text-shadow: -0.5px -0.5px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
-}
+    font-size: 2.8rem;
+    margin-bottom: 13rem;
+    margin-top: -22rem;
+  }
 
-.content-container p {
-    margin: 0.5rem 0;
+  .content-container p {
     font-size: 1.5rem;
-    color: rgb(0, 0, 0);
-    
-}
+    margin-top: -12rem;
+  }
 
-  
   .button-bingo {
-    margin-top: 1rem; 
-    padding: 0.5rem 1rem; 
-    font-size: 1rem; 
-    margin-left:2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-left: -2rem;
   }
-  
-
-
-  @media (max-width: 768px) {
-
-    .image-container {
-        height: 100vh; 
-    }
-
-    .image-container img {
-        height: 100%; 
-        object-fit: cover; 
-    }
-
-    .content-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-align: center;
-        width: 100%; 
-        max-width: none; 
-    }
-
-    .content-container h2 {
-        font-size: 2.8rem;
-        margin-bottom: 13rem;
-        margin-top: -22rem;
-    }
-  
-    .content-container p {
-        font-size: 1.5rem;
-        margin-top: -12rem;
-    }
-  
-    .button-bingo {
-      
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      margin-left: -2rem;
-  }
-  }
-  @media only screen and (max-width: 600px) {
-    /* Estilos para FloatingNumbers em telas pequenas (smartphones) */
-    .floating-number-class {
-        font-size: menor;
-        /* Outros estilos responsivos */
-    }
 }
 
-  
+@media only screen and (max-width: 600px) {
+  .floating-number-class {
+    font-size: smaller;
+  }
+}

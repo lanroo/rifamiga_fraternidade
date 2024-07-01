@@ -59,7 +59,7 @@ const RafflePage: React.FC = () => {
   }, [isModalOpen]);
 
   return (
-    <div>
+    <div className="raffle-container">
       <h3 id='numbers-text'>Escolha seus números da Sorte.</h3>
       <div className="bingo-board">
         {Array.from({ length: 75 }, (_, i) => i + 1).map((number) => (
@@ -92,30 +92,27 @@ const RafflePage: React.FC = () => {
             </div>
             <h3>Digite seu nome</h3>
             <input type="text" value={userName} onChange={handleNameChange} />
-            {/* <input type="text" value={userName} onChange={handleNameChange} /> */}
             <div className="modal-actions">
-            <motion.button
-          className="button-reservar" // Classe separada para o botão "Reservar Números"
-          whileHover={{ scale: 1.05 }}
-          onClick={() => {
-            handleCloseModal();
-            navigate('/reservar-numeros');
-          }}
-        >
-          Reservar Números
-        </motion.button>
-
-        <motion.button
-          className="button-comprar" // Classe separada para o botão "Comprar Números"
-          whileHover={{ scale: 1.05 }}
-          onClick={() => {
-            handleCloseModal();
-            navigate('/comprar-numeros');
-          }}
-        >
-          Comprar Números
-        </motion.button>
-
+              <motion.button
+                className="button-reservar"
+                whileHover={{ scale: 1.05 }}
+                onClick={() => {
+                  handleCloseModal();
+                  navigate('/reservar-numeros');
+                }}
+              >
+                Reservar Números
+              </motion.button>
+              <motion.button
+                className="button-comprar"
+                whileHover={{ scale: 1.05 }}
+                onClick={() => {
+                  handleCloseModal();
+                  navigate('/comprar-numeros');
+                }}
+              >
+                Comprar Números
+              </motion.button>
             </div>
           </div>
         </div>
