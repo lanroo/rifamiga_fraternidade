@@ -18,10 +18,10 @@
   .login-container {
     max-width: 400px;
     margin: 0; /* Remove o centramento */
-    padding: 50px;
+    padding: 204px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    background: #2c2c2c; 
+    background: #292525cf; 
     position: relative;
     z-index: 2; 
     margin-left: 0; /* Alinha à esquerda */
@@ -45,6 +45,9 @@
     pointer-events: none;
     z-index: 1; 
   }
+  p.login-error {
+    color: white;
+  } 
   .input-container input {
     width: 100%;
     padding: 12px 20px;

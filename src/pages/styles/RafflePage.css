@@ -10,7 +10,7 @@ body.modal-open {
     justify-content: center;
     min-height: 77vh;
     background-color: #f7f7f7;
-    padding: 20px;
+    padding: 11px;
 }
   
   h3#numbers-text {
@@ -21,12 +21,20 @@ body.modal-open {
     margin-bottom: 1rem;
   }
   
-  .bingo-board {
+  /* .bingo-board {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(19, 1fr);
     gap: 10px;
     justify-content: center;
     margin-bottom: 2em;
+  } */
+
+  .bingo-board {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 21px;
+    justify-content: center;
+    margin-bottom: 3em;
   }
   
   .bingo-number {
