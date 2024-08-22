@@ -45,8 +45,8 @@ function LoginPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1>Área Privativa</h1>
-        <h2 className='login-texting'>Login</h2>
+        <h1>Login</h1>
+        {/* <h2 className='login-texting'>Login</h2> */}
         <form onSubmit={handleSubmit}>
         <div className="login-input-container">
             <input
